@@ -25,8 +25,6 @@ attrs:
      enabled: false
   hopsworks:
      encryption_password: "verysecurepassword"
-  conda:
-    mirror_list: "http://bbc2.sics.se:8000/pkgs/main/linux-64,http://bbc2.sics.se:8000/pkgs/main/noarch"
 
 groups:
   namenodes:
@@ -35,7 +33,6 @@ groups:
       ip: 192.168.56.101
     recipes:
       - kagent
-      - conda
       - ndb::mgmd
       - ndb::mysqld
       - hops::ndb
@@ -63,7 +60,6 @@ groups:
       ip: 192.168.56.102
     recipes:
       - kagent
-      - conda
       - ndb::ndbd
       - ndb::mysqld
       - hops::ndb
@@ -82,7 +78,6 @@ groups:
       ip: 192.168.56.103
     recipes:
       - kagent
-      - conda
       - ndb::ndbd
       - kzookeeper
       - elastic
