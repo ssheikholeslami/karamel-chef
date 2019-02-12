@@ -5,10 +5,11 @@ baremetal:
 cookbooks:
   hopsworks:
     github: logicalclocks/setup-chef
-    branch: 0.8-kube
+    branch: 0.9-kube
 
 attrs:
-
+  install:
+    dir: /srv/hops
 groups:
   namenodes:
     size: 1

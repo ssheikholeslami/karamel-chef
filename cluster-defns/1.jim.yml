@@ -5,7 +5,7 @@ baremetal:
 cookbooks:
   hopsworks:
     github: logicalclocks/hopsworks-chef
-    branch: airflow
+    branch: cvat
 
 attrs:
   #install:
@@ -63,3 +63,5 @@ groups:
       - hopsmonitor::telegraf
       - hive2
       - hops_airflow
+      - hops_airflow::sqoop
+      - cvat
