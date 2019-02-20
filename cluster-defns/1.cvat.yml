@@ -5,28 +5,16 @@ baremetal:
 cookbooks:
   hopsworks:
     github: logicalclocks/hopsworks-chef
-    branch: group_bug
+    branch: cvat
 
 attrs:
-  #install:
-    #dir: /srv/hops
-    # upgrade: false
-    # user: vagrant
+  install:
+    dir: /srv/hops
   kagent:
     network:
       interface: enp0s3
   hopsworks:
     port: 8080
-#  conda:
-#    use_defaults: false
-#    mirror_list: "http://snurran.sics.se/hops/conda/pkgs/main/linux-64,http://snurran.sics.se/hops/conda/pkgs/main/noarch"
-#  hopsworks:
-#    ca_url: http://snurran.sics.se/hops/hopsworks/0.9.0-SNAPSHOT/hopsworks-ca-jim.war
-#    ear_url: http://snurran.sics.se/hops/hopsworks/0.9.0-SNAPSHOT/hopsworks-ear-jim.ear
-#    war_url: http://snurran.sics.se/hops/hopsworks/0.9.0-SNAPSHOT/hopsworks-web-jim.war
-  rstudio:
-    enabled: true
-
 groups:
   namenodes:
     size: 1
@@ -64,3 +52,4 @@ groups:
       - hive2
       - hops_airflow
       - hops_airflow::sqoop
+      - cvat

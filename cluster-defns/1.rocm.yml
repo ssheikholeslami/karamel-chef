@@ -1,0 +1,22 @@
+name: InstallRocm
+baremetal:
+    username: radeon
+
+cookbooks:
+  hopsworks:
+    github: logicalclocks/hopsworks-chef
+    branch: rocm
+
+attrs:
+  install:
+    dir: /srv/hops
+  amd:
+    rocm: true
+groups:
+  master:
+    size: 1
+    baremetal:
+      ip: 10.0.2.15
+    recipes:
+      - tensorflow::install
+      
