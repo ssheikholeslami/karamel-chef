@@ -8,15 +8,9 @@ cookbooks:
     branch: group_bug
 
 attrs:
-  #install:
-    #dir: /srv/hops
-    # upgrade: false
-    # user: vagrant
   kagent:
     network:
       interface: enp0s3
-  hopsworks:
-    port: 8080
 #  conda:
 #    use_defaults: false
 #    mirror_list: "http://snurran.sics.se/hops/conda/pkgs/main/linux-64,http://snurran.sics.se/hops/conda/pkgs/main/noarch"

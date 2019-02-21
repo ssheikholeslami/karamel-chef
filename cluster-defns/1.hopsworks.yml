@@ -8,13 +8,9 @@ cookbooks:
     branch: master
 
 attrs:
-  install:
-    dir: /srv/hops
   kagent:
     network:
       interface: enp0s3
-  hopsworks:
-    port: 8080
 groups:
   namenodes:
     size: 1
