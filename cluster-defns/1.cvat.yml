@@ -11,8 +11,8 @@ attrs:
   kagent:
     network:
       interface: enp0s3
-  cvat:
-    openvino: "true"
+#  cvat:
+#    openvino: "true"
 groups:
   namenodes:
     size: 1
