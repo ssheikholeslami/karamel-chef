@@ -5,9 +5,11 @@ baremetal:
 cookbooks:
   hopsworks:
     github: logicalclocks/hopsworks-chef
-    branch: master
+    branch: 0.9
 
 attrs:
+  install:
+    dir: /srv/hops
   kagent:
     network:
       interface: enp0s3
@@ -35,11 +37,11 @@ groups:
       - kkafka
       - epipe
       - hopsworks
+      - hopsworks::dev
       - hopsmonitor
       - hopslog
       - hopslog::_filebeat-spark
       - hopslog::_filebeat-serving
-      - hopslog::_filebeat-kagent
       - hops::dn
       - hops::nm
       - tensorflow
