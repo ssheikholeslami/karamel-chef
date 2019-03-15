@@ -11,7 +11,9 @@ attrs:
   kagent:
     network:
       interface: enp0s3
-#  cvat:
+  cvat:
+     admin_user: cvat
+     admin_password: Hopsworks
 #    openvino: "true"
 groups:
   namenodes:
@@ -33,7 +35,6 @@ groups:
       - flink::yarn
       - elastic
       - livy
-      - zeppelin
       - kzookeeper
       - kkafka
       - epipe
