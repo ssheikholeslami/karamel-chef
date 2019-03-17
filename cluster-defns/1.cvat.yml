@@ -15,6 +15,10 @@ attrs:
      admin_user: cvat
      admin_password: Hopsworks
 #    openvino: "true"
+  hops:
+    rmappsecurity:
+      actor_class: "org.apache.hadoop.yarn.server.resourcemanager.security.DevHopsworksRMAppSecurityActions"
+
 groups:
   namenodes:
     size: 1
@@ -39,15 +43,14 @@ groups:
       - kkafka
       - epipe
       - hopsworks
-      - hopsworks::dev
       - hopsmonitor
       - hopslog
       - hopslog::_filebeat-spark
       - hopslog::_filebeat-serving
+      - hopslog::_filebeat-kagent
       - hops::dn
       - hops::nm
       - tensorflow
-      - hopsmonitor::telegraf
       - hive2
       - hops_airflow
       - hops_airflow::sqoop
