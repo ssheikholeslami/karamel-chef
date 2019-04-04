@@ -20,6 +20,9 @@ attrs:
     war_url: http://snurran.sics.se/hops/hopsworks/0.10.0-SNAPSHOT/hopsworks-web-jim.war
   rstudio:
     enabled: true
+  hops:
+    rmappsecurity:
+      actor_class: "org.apache.hadoop.yarn.server.resourcemanager.security.DevHopsworksRMAppSecurityActions"
 
 groups:
   namenodes:
@@ -56,3 +59,5 @@ groups:
       - tensorflow
       - hopsmonitor::telegraf
       - hive2
+      - hops_airflow
+      - hops_airflow::sqoop
