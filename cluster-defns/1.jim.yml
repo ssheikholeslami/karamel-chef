@@ -4,8 +4,8 @@ baremetal:
 
 cookbooks:
   hopsworks:
-    github: robzor92/hopsworks-chef
-    branch: HOPSWORKS-716
+    github: logicalclocks/hopsworks-chef
+    branch: maggymagic
 
 attrs:
   kagent:

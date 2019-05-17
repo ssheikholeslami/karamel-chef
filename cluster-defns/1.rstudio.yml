@@ -44,7 +44,6 @@ groups:
       - flink::yarn
       - elastic
       - livy
-      - zeppelin
       - kzookeeper
       - kkafka
       - epipe
