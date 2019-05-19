@@ -11,7 +11,8 @@ attrs:
   kagent:
     network:
       interface: enp0s3
-#  conda:
+  conda:
+    additional_libs: fastai
 #    use_defaults: false
 #    mirror_list: "http://snurran.sics.se/hops/conda/pkgs/main/linux-64,http://snurran.sics.se/hops/conda/pkgs/main/noarch"
   hopsworks:
