@@ -8,6 +8,8 @@ cookbooks:
     branch: __BRANCH__
 
 attrs:
+  maggy:
+    version: git+https://github.com/ssheikholeslami/maggy@ablation_custom_models
   __DOWNLOAD__
   install:
     dir: /srv/hops
